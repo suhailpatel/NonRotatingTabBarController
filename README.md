@@ -3,7 +3,7 @@ NonRotatingTabBarController
 
 Code to help solve an issue in iOS Development where you want all your views in your tab bar controller to be a specific orientation (such as Portrait) but have a single view or subview in one of your tabs which require a different orientation (such as Landscape) which the rest of your views don't support
 
-This became an issue in iOS6 SDK because you can no longer set an orientation but still use other orientations which you haven't mark as supported (they now crash the app with a crash log message).
+This became an issue in iOS6 SDK because you can no longer set an orientation (such as Portrait only) in project settings and still use other orientations which you haven't mark as supported (they now crash the app with a crash log message).
 
 Usage
 -----
