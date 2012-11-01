@@ -14,9 +14,9 @@ Simply include the NonRotatingTabBarController.h class and initialise your tab b
     
 Now all your views will be portrait by default unless you specify in your view to use landscape for example (there are a whole bunch of combinations so modify it as you please and don't forget to modify the included files too!)
 
-    - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
+    - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
     {
-        return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+        return (UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight);
     }
 
     - (NSUInteger)supportedInterfaceOrientations 
